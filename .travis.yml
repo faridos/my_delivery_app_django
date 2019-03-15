@@ -6,7 +6,7 @@ services:
   - docker
 
 
-before_script: pip install docker-compose
+before_script: sudo pip install docker-compose
 
 script:
   - docker-compose build
