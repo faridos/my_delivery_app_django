@@ -20,9 +20,9 @@ services:
       - DB_NAME=app
       - DB_USER=postgres
       - DB_PASS=supersecretpassword
-      - VIRTUAL_HOST=foodrunner.lvh.me
+      - VIRTUAL_HOST=foodrunner.le-5ra.de
       - VIRTUAL_PROTO= uwsgi
-      - LETSENCRYPT_HOST=foodrunner.lvh.me
+      - LETSENCRYPT_HOST=foodrunner.le-5ra.de
       - LETSENCRYPT_EMAIL=mm@vimmoda.com
     depends_on:
       - db
