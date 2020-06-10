@@ -5,7 +5,7 @@ services:
     build:
       context: .
     ports:
-      - "8000:8000"
+      - "8084"
     volumes:
       - ./app:/app
     #command: >
@@ -13,9 +13,10 @@ services:
     #  sh -c "python manage.py wait_for_db &&
     #         python manage.py migrate &&
     #         python manage.py runserver 0.0.0.0:8000"
-    command: sh -c "python manage.py wait_for_db && uwsgi --socket :8080 --http :8000 --buffer-size=32768  --module  app.wsgi "
+    command: sh -c "python manage.py wait_for_db && uwsgi --socket :8084 --http :8000 --buffer-size=32768  --module  app.wsgi "
 
     environment:
+      - DJANGO_SETTINGS_MODULE=app.settings
       - DB_HOST=db
       - DB_NAME=app
       - DB_USER=postgres

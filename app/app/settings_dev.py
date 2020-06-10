@@ -25,7 +25,7 @@ SECRET_KEY = 'c#efhjip4dy=kp&(76s277#u3bj9bdch)!xp0&&s75oxfn)2^7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['foodrunner.lvh.me']
+ALLOWED_HOSTS = ['foodrunner.le-5ra.de']
 
 
 # Application definition
